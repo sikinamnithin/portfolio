@@ -8,7 +8,8 @@ const experiences = [
     company: 'ai4lex',
     companyUrl: 'https://casemanager.sapient-ia.it/',
     period: '2024 - Present',
-    description: 'Building a SaaS platform for law firms that handles case management and document analysis. Designed the Azure infrastructure for production use. The system serves real users with minimal downtime. Currently building AI agents for contracts management (http://dev.ai4contracts.com/). Also leading a small engineering team.',
+    description: 'Headed and coded most of the main SaaS platform for law firms that handles case management and document analysis. Designed the Azure infrastructure for production use. The system serves real users with minimal downtime. Currently building AI agents for contracts management.',
+    projectUrl: 'http://dev.ai4contracts.com/',
     technologies: ['Golang', 'Next.js', 'TypeScript', 'Azure', 'PostgreSQL', 'AI Agents', 'RAG'],
   },
   {
@@ -99,6 +100,17 @@ export default function Experience() {
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   {exp.description}
                 </p>
+
+                {exp.projectUrl && (
+                  <a
+                    href={exp.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white font-medium rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors text-sm"
+                  >
+                    View AI Contracts Project ↗
+                  </a>
+                )}
 
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, i) => (
