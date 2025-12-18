@@ -75,31 +75,11 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              className="flex flex-wrap gap-4"
-            >
-              <a
-                href="#projects"
-                className="px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white font-medium hover:border-gray-900 dark:hover:border-white transition-colors"
-              >
-                Get in Touch
-              </a>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
               className="pt-8 flex items-center gap-6"
             >
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/sikinamnithin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -110,7 +90,7 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/nithin-sikinam/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -121,7 +101,7 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:nithinsikinam@gmail.com"
                 className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 <span className="sr-only">Email</span>

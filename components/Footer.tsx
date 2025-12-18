@@ -50,21 +50,6 @@ export default function Footer() {
               </motion.a>
             ))}
           </motion.div>
-
-          <motion.div
-            className="text-center text-gray-400"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-sm">
-              &copy; {new Date().getFullYear()} Nithin Sikinam. All rights reserved.
-            </p>
-            <p className="text-xs mt-2">
-              Built with Next.js, TypeScript, and Tailwind CSS
-            </p>
-          </motion.div>
         </div>
       </div>
     </footer>
