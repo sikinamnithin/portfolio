@@ -6,8 +6,9 @@ const experiences = [
   {
     title: 'Software Engineer & Team Lead',
     company: 'ai4lex',
+    companyUrl: 'https://casemanager.sapient-ia.it/',
     period: '2024 - Present',
-    description: 'Building a SaaS platform for law firms that handles case management and document analysis. Designed the Azure infrastructure for production use. The system serves real users with minimal downtime. Currently working on AI features using RAG and agent architectures. Also leading a small engineering team.',
+    description: 'Building a SaaS platform for law firms that handles case management and document analysis. Designed the Azure infrastructure for production use. The system serves real users with minimal downtime. Currently building AI agents for contracts management (http://dev.ai4contracts.com/). Also leading a small engineering team.',
     technologies: ['Golang', 'Next.js', 'TypeScript', 'Azure', 'PostgreSQL', 'AI Agents', 'RAG'],
   },
   {
@@ -18,10 +19,11 @@ const experiences = [
     technologies: ['AI/ML', 'Full Stack Development', 'Product Development'],
   },
   {
-    title: 'Android & React Native Developer',
+    title: 'React and Mobile Developer',
     company: 'Avidii',
+    companyUrl: 'https://avidii.ch/en-in/',
     period: '2023 - 2024',
-    description: 'Developed critical native Android app connecting students with teachers for instant doubt clearing. Maintained existing React Native application and conducted technical interviews for computer science teachers.',
+    description: 'Developed critical native Android app connecting students with teachers for instant doubt clearing. Maintained existing React Native application and conducted technical interviews for computer science teachers. Company closed due to running out of runway.',
     technologies: ['Android (Native)', 'Kotlin', 'React Native', 'Mobile Development'],
   },
   {
@@ -74,9 +76,20 @@ export default function Experience() {
                     {exp.title}
                   </h3>
                   <div className="flex flex-wrap items-center gap-3 mt-2">
-                    <span className="text-gray-700 dark:text-gray-300 font-medium">
-                      {exp.company}
-                    </span>
+                    {exp.companyUrl ? (
+                      <a
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      >
+                        {exp.company} ↗
+                      </a>
+                    ) : (
+                      <span className="text-gray-700 dark:text-gray-300 font-medium">
+                        {exp.company}
+                      </span>
+                    )}
                     <span className="text-gray-500 dark:text-gray-500 text-sm font-mono">
                       {exp.period}
                     </span>

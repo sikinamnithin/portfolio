@@ -8,7 +8,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'experience', 'projects', 'skills', 'contact'];
+      const sections = ['hero', 'about', 'experience', 'skills'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -36,9 +36,7 @@ export default function Navigation() {
     { id: 'hero', label: '01', name: 'Home' },
     { id: 'about', label: '02', name: 'About' },
     { id: 'experience', label: '03', name: 'Experience' },
-    { id: 'projects', label: '04', name: 'Projects' },
-    { id: 'skills', label: '05', name: 'Skills' },
-    { id: 'contact', label: '06', name: 'Contact' },
+    { id: 'skills', label: '04', name: 'Skills' },
   ];
 
   return (
@@ -113,7 +111,7 @@ export default function Navigation() {
             &lt;SikinamNithin /&gt;
           </button>
           <div className="flex space-x-4 text-xs font-mono">
-            {navItems.slice(0, 4).map((item) => (
+            {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
