@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 export default function Hero() {
   const [text, setText] = useState('');
-  const fullText = '> Building digital experiences...';
+  const fullText = '> Building Deep Technology...';
 
   useEffect(() => {
     let index = 0;
