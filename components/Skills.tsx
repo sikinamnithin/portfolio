@@ -29,7 +29,7 @@ const skillCategories = [
   },
   {
     title: 'Blockchain',
-    skills: ['Solana (Familiar)'],
+    skills: ['Solana'],
   },
 ];
 
