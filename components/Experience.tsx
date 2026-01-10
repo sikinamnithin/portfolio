@@ -23,12 +23,12 @@ const experiences = [
     technologies: ['AI/ML', 'Full Stack Development', 'Product Development'],
   },
   {
-    title: 'React and Mobile Developer',
+    title: 'Software Developer',
     company: 'Avidii',
     companyUrl: 'https://avidii.ch/en-in/',
     period: '2023 - 2024',
-    description: 'Developed critical native Android app connecting students with teachers for instant doubt clearing. Maintained existing React Native application and conducted technical interviews for computer science teachers. Company closed due to running out of runway.',
-    technologies: ['Android (Native)', 'Kotlin', 'React Native', 'Mobile Development'],
+    description: 'Developed critical native Android app connecting students with teachers for instant doubt clearing along with backend APIs. Maintained existing React Native application and conducted technical interviews for computer science teachers. Company closed due to running out of runway.',
+    technologies: ['Android (Native)', 'Kotlin', 'Backend APIs', 'React Native', 'Mobile Development'],
   },
   {
     title: 'Freelance Developer',
