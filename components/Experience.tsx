@@ -11,7 +11,7 @@ const experiences = [
     description: 'Headed and coded most of the main SaaS platform for law firms that handles case management and document analysis. Designed the Azure infrastructure for production use. The system serves real users with minimal downtime. Currently building AI agents for contracts management.',
     projectUrls: [
       { label: 'Case Manager (In Production)', url: 'https://casemanager.sapient-ia.it/' },
-      { label: 'AI Contracts Project', url: 'http://dev.ai4contracts.com/' }
+      { label: 'AI Contracts Project (Dev - Cannot share credentials due to internal data)', url: 'http://dev.ai4contracts.com/' }
     ],
     technologies: ['Golang', 'Next.js', 'TypeScript', 'Azure', 'PostgreSQL', 'AI Agents', 'RAG'],
   },
